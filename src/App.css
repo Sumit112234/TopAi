@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.horror-background {
+
+  background: linear-gradient(135deg, #000000, #2b2b2b, #3f3f3f, #7e0800);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+.horror-background8 {
+
+  background: linear-gradient(135deg, #000000, #2b2b2b, #3f3f3f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+.simple-background{
+  background-color:#212121;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.horror-background1, .horror-background2, .horror-background3, .horror-background4, .horror-background5 {
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+  animation: gradientAnimation1 10s ease infinite, moveAnimation1 5s ease-in-out infinite;
+}
+
+.horror-background2 {
+  background: linear-gradient(135deg, #1b1b1b, #3a3a3a, #4f4f4f, #9e0700);
+  animation: gradientAnimation2 12s ease infinite, moveAnimation2 6s ease-in-out infinite;
+}
+
+.horror-background3 {
+  background: linear-gradient(135deg, #2a2a2a, #494949, #5e5e5e, #ae0600);
+  animation: gradientAnimation3 14s ease infinite, moveAnimation3 7s ease-in-out infinite;
+}
+
+.horror-background4 {
+  background: linear-gradient(135deg, #393939, #585858, #6d6d6d, #be0500);
+  animation: gradientAnimation4 16s ease infinite, moveAnimation4 8s ease-in-out infinite;
+}
+
+.horror-background5 {
+  background: linear-gradient(135deg, #484848, #676767, #7c7c7c, #ce0400);
+  animation: gradientAnimation5 18s ease infinite, moveAnimation5 9s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation1 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientAnimation2 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientAnimation3 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientAnimation4 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientAnimation5 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes moveAnimation1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes moveAnimation2 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+
+@keyframes moveAnimation3 {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+}
+
+@keyframes moveAnimation4 {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes moveAnimation5 {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.custom-hover:hover {
+  background-color: #212121;
+}
+#chats {
+  height: 47.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #333;
+}
+
+#chats::-webkit-scrollbar {
+  width: 12px;
+}
+
+#chats::-webkit-scrollbar-track {
+  background: #333;
+}
+
+#chats::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+
+#form-1{
+  width:85%;
+}
+@media (min-width: 640px) {
+  #chats {
+    height: 31rem;
+  }
+  #form-1{
+    width:65%;
+  }
+}
